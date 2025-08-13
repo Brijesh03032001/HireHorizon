@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Button } from "@/components/ui/button";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -22,14 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
+       
     <html lang="en">
       <body
         className={`${poppins.variable} ${poppins.variable} antialiased`}
-      >
+        >
         {children}
         
 
       </body>
     </html>
+   </ClerkProvider>
   );
 }

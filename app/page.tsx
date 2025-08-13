@@ -5,7 +5,7 @@ const Homepage = () => {
     <div>
       <h1>Welcome to the Job Portal</h1>
       <p>Your one-stop solution for job hunting and recruitment.</p>
-      <Button variant="primary">Get Started</Button>
+      <Button variant="primary">Get Starteddd</Button>
     </div>
   );
 }
